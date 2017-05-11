@@ -1,0 +1,120 @@
+@import '../../../../../../styles/variables';
+
+
+/* SMALL - PORTRAIT */
+//20rem = 320px
+@media only screen and (max-width : $smallPortraitMaxWidth)
+{
+}
+
+
+/* SMALL - LANDSCAPE */
+//20.0625rem = 321px	
+//39.9999rem = 639px
+@media only screen and (min-width : $smallLandscapeMinWidth) and (max-width : $smallLandscapeMaxWidth) and (orientation : landscape)
+{	
+}
+
+
+/* CUSTOM - 500px */
+@media only screen and (min-width : 500px)
+{
+}
+
+
+/* MEDIUM */
+//40rem = 640px
+@media only screen and (min-width : $mediumMinWidth)
+{
+}
+
+
+/* MEDIUM - PORTRAIT*/
+//40rem = 640px		
+//64rem = 1024px 
+@media only screen and (min-width : $mediumMinWidth) and (max-width : $mediumMaxWidth) and (orientation : portrait)
+{
+}
+
+
+/* MEDIUM - LANDSCAPE */
+//40rem = 640px		
+//64rem = 1024px
+@media only screen and (min-width : $mediumMinWidth) and (max-width : $mediumMaxWidth) and (orientation : landscape)
+{	
+}
+
+
+/* MEDIUM - MID */
+//48rem = 768px
+@media only screen and (min-width : $mediumMidWidth)
+{
+}
+
+
+/* LARGE */
+//64.0625rem = 1025px
+@media only screen and (min-width: $largeMinWidth)
+{
+	footer
+	{
+		&[role=topFooter]
+		{
+			background-color: $color-background-footer;
+			border-top: solid 1px $color-border;
+			height: 30rem;
+			margin-top: 4rem;
+			padding: 6rem 0;
+
+
+			dsb-nav
+			{
+				/deep/
+				{
+					ul.menu-bar
+					{
+						list-style-type: none;
+						margin: 0;
+						padding: 0;
+
+						>li
+						{
+							color:$color-grey;
+							font-size: 1.5rem;
+							margin: 1rem 0;
+						}
+					}
+				}
+			}
+
+			dsp-social-media-list
+			{
+				display: flex;
+				justify-content: center;
+				margin-top: 1rem;
+
+				/deep/ dsp-social-media-item
+				{
+					font-size: 3rem;
+			    margin: 0 1rem;
+
+					a
+					{
+						color: $color-grey-medium;
+					}
+				}
+			}			
+		}	
+
+		&[role=bottomFooter]
+		{
+			background-color: $color-background-footer-bottom;
+			border-top: solid 1px $color-border;
+			color: $color-grey-medium;
+			font-family: $font-family-text;
+			font-size: 0.75rem;
+			height: 4rem;
+			line-height: 4rem;
+		}
+	}
+}

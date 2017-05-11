@@ -1,0 +1,36 @@
+<section class="page-container" *ngIf="PageData && PageData.ContentList.length > 0">
+	
+	<section class="page-container__header">
+		<!--MEDIA-->
+		<cdf-video-background [mediaModel]="PageData.BackgroundImageModel"></cdf-video-background>
+
+		<!--MESSAGE-->
+		<section class="page-container__header__content">
+			<section class="row collapse align-middle">
+				<div class="column align-self-middle">
+					<h2>{{PageData.Subtagline}}</h2>
+				</div>
+			</section>
+		</section>
+	</section>
+
+	<!--PAGE DESCRIPTION-->
+	<section class="page-container__content">
+		<section class="row align-center">
+			<div class="column small-10 medium-9 large-8">
+				<span [innerHTML]="PageData.Description"></span>
+			</div>
+		</section>
+	</section>	
+
+	<!--CONTENT LIST-->
+	<section class="page-container__content">
+		<section class="masonry-layout" *ngIf="PageData.ContentList.length > 0">
+			<section class="masonry-layout__panel" [ngClass]="{hasVideo: item.HasVideo}" *ngFor="let item of PageData.ContentList">
+				<section class="masonry-layout__panel__content">
+					<section ctrl-factory [contentTypeModel]="item"></section>
+				</section>
+			</section>
+		</section>
+	</section>		
+</section>

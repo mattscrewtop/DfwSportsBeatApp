@@ -1,0 +1,59 @@
+@import '../../../styles/variables';
+
+header
+{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.container 
+{
+  border: solid 1px red;
+  height: 90vh;
+  margin: 110px 0 0 0;
+  width: 90vw;
+}
+
+
+/* SMALL - PORTRAIT */
+//20rem = 320px
+@media only screen and (max-width : $smallPortraitMaxWidth)
+{
+}
+
+
+/* SMALL - LANDSCAPE */
+//20.0625rem = 321px	39.9999rem = 639px
+@media only screen and (min-width : $smallLandscapeMinWidth) and (max-width : $smallLandscapeMaxWidth) and (orientation : landscape)
+{	
+}
+
+
+/* MEDIUM */
+//40rem = 640px		//64rem = 1024px 
+@media only screen and (min-width : $mediumMinWidth)
+{
+}
+
+
+/* MEDIUM - PORTRAIT*/
+//40rem = 640px		//64rem = 1024px 
+@media only screen and (min-width : $mediumMinWidth) and (max-width : $mediumMaxWidth) and (orientation : portrait)
+{
+}
+
+
+/* MEDIUM - LANDSCAPE */
+//40rem = 640px		//64rem = 1024px
+@media only screen and (min-width : $mediumMinWidth) and (max-width : $mediumMaxWidth) and (orientation : landscape)
+{	
+}
+
+
+/* LARGE */
+//64.0625rem = 1025px
+@media only screen and (min-width: $largeMinWidth)
+{
+}

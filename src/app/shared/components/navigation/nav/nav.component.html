@@ -1,0 +1,16 @@
+<ul class="menu-bar">
+	<li class="logo" *ngIf="IsLogoVisible">						
+		<h1>
+			<a routerLink="/home" (click)="onNavItemCicked()">DFW SportsBeat</a>
+		</h1>						
+	</li>
+	<li class="home" [routerLinkActive]="'active'">
+		<a routerLink="/home" (click)="onNavItemCicked()">Home</a>
+	</li>
+	<li [routerLinkActive]="'active'">
+		<a routerLink="/about-us" (click)="onNavItemCicked()">About Us</a>
+	</li>
+	<li [routerLinkActive]="'active'">
+		<a routerLink="/contact-us" (click)="onNavItemCicked()">Contact Us</a>
+	</li>
+</ul>

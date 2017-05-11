@@ -1,0 +1,109 @@
+@import '../../../../styles/variables';
+
+
+cdf-media
+{
+	height: 17rem;
+	width: initial;
+}
+
+.page-container
+{
+	&__header
+	{
+		&__content
+		{
+
+			h2
+			{
+				font-size: 3rem;
+				text-transform: capitalize;
+			}
+		}
+	}
+}
+h2
+{
+	&.section-title
+	{
+		border-bottom: 1px solid rgba(10, 10, 10, 0.25);
+	}
+}
+
+
+/* SMALL - PORTRAIT */
+//20rem = 320px
+@media only screen and (max-width : $smallPortraitMaxWidth)
+{
+}
+
+
+/* SMALL - LANDSCAPE */
+//20.0625rem = 321px	
+//39.9999rem = 639px
+@media only screen and (min-width : $smallLandscapeMinWidth) and (max-width : $smallLandscapeMaxWidth) and (orientation : landscape)
+{	
+}
+
+
+/* CUSTOM - 500px */
+@media only screen and (min-width : 500px)
+{
+}
+
+
+/* MEDIUM */
+//40rem = 640px
+@media only screen and (min-width : $mediumMinWidth)
+{
+}
+
+
+/* MEDIUM - PORTRAIT*/
+//40rem = 640px		
+//64rem = 1024px 
+@media only screen and (min-width : $mediumMinWidth) and (max-width : $mediumMaxWidth) and (orientation : portrait)
+{
+}
+
+
+/* MEDIUM - LANDSCAPE */
+//40rem = 640px		
+//64rem = 1024px
+@media only screen and (min-width : $mediumMinWidth) and (max-width : $mediumMaxWidth) and (orientation : landscape)
+{	
+}
+
+
+/* MEDIUM - MID */
+//48rem = 768px
+@media only screen and (min-width : $mediumMidWidth)
+{
+	cdf-media
+	{
+		height: 20rem;
+		width: initial;
+	}
+
+	.page-container
+	{
+		&__header
+		{
+			&__content
+			{
+				h2
+				{
+					font-size: 4rem;
+					line-height: 1.125;
+				}	
+			}
+		}
+	}	
+}
+
+
+/* LARGE */
+//64.0625rem = 1025px
+@media only screen and (min-width: $largeMinWidth)
+{
+}

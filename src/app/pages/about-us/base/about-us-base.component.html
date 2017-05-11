@@ -1,0 +1,37 @@
+<section class="page-container" *ngIf="PageData">
+	<!-- SCREWTOP INTRO -->
+	<div class="page-container__header">
+
+		<!--ABOUT-US MEDIA-->
+		<cdf-media [mediaModel]="PageData.MediaModel"></cdf-media>
+
+		<div class="page-container__header__content">
+			<section class="row collapse align-middle">
+				<div class="columns align-self-middle">
+					<h2>{{PageData.Tagline}}</h2>
+					<h3>{{PageData.Subtagline}}</h3>
+				</div>
+			</section>
+		</div>
+	</div>
+
+	<div class="page-container__content">
+		<section class="row align-center">
+			<div class="columns small-10 medium-9 large-8">
+				<span [innerHTML]="PageData.Description"></span>
+			</div>
+		</section>
+	</div>
+
+	<section class="row align-center">
+		<div class="columns small-10 medium-9 large-8">
+			<h2 class="section-title">Our History</h2>
+		</div>
+	</section>
+
+	<section class="row align-center">
+		<div class="columns small-10 medium-9 large-8">
+			<span [innerHTML]="PageData.OurHistory"></span>
+		</div>
+	</section>
+</section>

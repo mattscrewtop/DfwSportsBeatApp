@@ -1,0 +1,199 @@
+@import '../../../../../../styles/variables';
+
+
+.nav-mobile-container
+{
+    background-color: $color-primary;
+    background-image: url(/assets/images/mobile-nav-bg4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+	height: $height-mobile-page;
+	position: relative;
+
+	&__wrapper
+	{
+		background-color: rgba(0, 0, 0, 0.35);
+		height: $height-mobile-page;
+	}
+
+	&__slideout-menu
+	{
+		left: 2rem;
+		position: absolute;
+		top: 1.5rem;		
+	}		
+}
+
+header
+{
+	&[role=logo]
+	{
+		h1
+		{
+			font-size: 1.2em;
+			padding: 12px;
+			float: left;
+			color: $color-white;
+			text-decoration: none;
+		}		
+	}	
+
+	&[role=banner]
+	{
+		background-color: $color-primary;
+		box-shadow: 0 2px 5px rgba(0,0,0,0.26);
+		color: $color-white;
+		left: 0;
+		opacity: 0.95;
+		padding: 4px 4px 0px 4px;
+		position: fixed;
+		right: 0;
+		top: 0;
+		z-index: 1;
+
+		.btn--clear 
+		{
+			color: $color-white;
+			float: left;
+			padding: 6px 0 0 0;
+			min-width: 54px;
+
+			img 
+			{
+				width: 34px;
+			}
+		}
+
+		a.logo 
+		{
+			color: $color-white;
+			float: left;
+			font-family: $font-family-subheader;
+			font-size: 1.5rem;
+			line-height: 2;
+			text-decoration: none;
+		}
+	}
+}
+
+dsb-nav
+{
+	/deep/
+	{
+		ul.menu-bar
+		{
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			position: absolute;
+			top: 120px;				
+
+			>li
+			{
+				color: $color-white;
+				display: block;
+				font-family: $font-family-header;
+				font-size: 2em;
+				font-weight: bold;
+				padding: 18px 13px 16px 26px;
+				position: relative;
+				text-decoration: none;
+
+				&:hover, &:active, &:focus 
+				{
+					background: darken($color-white, 5%);
+					color: $color-grey-dark;
+					cursor: pointer;
+
+					a
+					{
+						color: $color-grey-dark;
+					}
+				}
+
+				a
+				{
+					color: $color-white;
+				}				
+			}
+		}
+	}
+}
+
+main
+{	
+	background-color: $color-background;
+	padding-top: 3.25rem;
+	margin-bottom: 4rem;
+	min-height: $height-mobile-page;
+}
+
+
+
+/* SMALL - PORTRAIT */
+//20rem = 320px
+@media only screen and (max-width : $smallPortraitMaxWidth)
+{
+}
+
+
+/* SMALL - LANDSCAPE */
+//20.0625rem = 321px	
+//39.9999rem = 639px
+@media only screen and (min-width : $smallLandscapeMinWidth) and (max-width : $smallLandscapeMaxWidth) and (orientation : landscape)
+{	
+}
+
+
+/* CUSTOM - 500px */
+@media only screen and (min-width : 500px)
+{
+}
+
+
+/* MEDIUM */
+//40rem = 640px
+@media only screen and (min-width : $mediumMinWidth)
+{
+}
+
+
+/* MEDIUM - PORTRAIT*/
+//40rem = 640px		
+//64rem = 1024px 
+@media only screen and (min-width : $mediumMinWidth) and (max-width : $mediumMaxWidth) and (orientation : portrait)
+{
+}
+
+
+/* MEDIUM - LANDSCAPE */
+//40rem = 640px		
+//64rem = 1024px
+@media only screen and (min-width : $mediumMinWidth) and (max-width : $mediumMaxWidth) and (orientation : landscape)
+{	
+}
+
+
+/* MEDIUM - MID */
+//48rem = 768px
+@media only screen and (min-width : $mediumMidWidth)
+{
+}
+
+
+/* MEDIUM - MAX */
+@media only screen and (max-width : $mediumMaxWidth)
+{
+	main 
+	{
+		display: flex;
+		flex-direction: column;		
+	}	
+}
+
+
+/* LARGE */
+//64.0625rem = 1025px
+@media only screen and (min-width: $largeMinWidth)
+{
+}

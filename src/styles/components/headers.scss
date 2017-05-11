@@ -1,0 +1,129 @@
+@import '../variables';
+
+h1
+{
+	color: $color-grey-dark;
+	font-family: $font-family-header;
+	font-size: 2rem;
+	font-weight: bold;
+	margin: 0;
+	letter-spacing: 3px;
+
+	&.logo
+	{
+		background-clip: border-box;
+		background-image: url("/assets/images/logo_266x80.png");
+		background-origin: padding-box;
+		background-position: center top;
+		background-repeat: no-repeat;
+		background-size: cover;
+		font-size: 0;
+		text-indent: -99999px;
+		margin: auto;
+		height: 80px;
+		width: 266px;	
+	}
+}
+
+h2
+{
+	font-family: $font-family-header;
+	font-size: 1.75rem;
+	font-weight: bold;
+	margin: 0;
+
+	&.section-title
+	{
+		border-bottom: solid 1px $color-border;
+	}
+}
+
+h3
+{
+	font-family: $font-family-header;
+	font-size: 1.5rem;
+	font-weight: bold;
+	margin: 0;
+}
+
+h4
+{
+	font-family: $font-family-subheader;
+	font-size: 1.25rem;
+	margin: 0;
+}
+
+h5
+{
+	font-family: $font-family-subheader;
+	font-size: 1rem;
+	margin: 0;
+}
+
+h6
+{
+	font-family: $font-family-subheader;
+	font-size: 0.875rem;
+	margin: 0;
+}
+
+
+
+
+
+/* SMALL - PORTRAIT */
+//20rem = 320px
+@media only screen and (max-width : $smallPortraitMaxWidth)
+{
+}
+
+
+/* SMALL - LANDSCAPE */
+//20.0625rem = 321px	
+//39.9999rem = 639px
+@media only screen and (min-width : $smallLandscapeMinWidth) and (max-width : $smallLandscapeMaxWidth) and (orientation : landscape)
+{	
+}
+
+
+/* CUSTOM - 500px */
+@media only screen and (min-width : 500px)
+{
+}
+
+
+/* MEDIUM */
+//40rem = 640px
+@media only screen and (min-width : $mediumMinWidth)
+{
+}
+
+
+/* MEDIUM - PORTRAIT*/
+//40rem = 640px		
+//64rem = 1024px 
+@media only screen and (min-width : $mediumMinWidth) and (max-width : $mediumMaxWidth) and (orientation : portrait)
+{
+}
+
+
+/* MEDIUM - LANDSCAPE */
+//40rem = 640px		
+//64rem = 1024px
+@media only screen and (min-width : $mediumMinWidth) and (max-width : $mediumMaxWidth) and (orientation : landscape)
+{	
+}
+
+
+/* MEDIUM - MID */
+//48rem = 768px
+@media only screen and (min-width : $mediumMidWidth)
+{
+}
+
+
+/* LARGE */
+//64.0625rem = 1025px
+@media only screen and (min-width: $largeMinWidth)
+{
+}

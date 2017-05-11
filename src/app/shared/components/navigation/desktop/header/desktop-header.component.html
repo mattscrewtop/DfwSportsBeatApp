@@ -1,0 +1,30 @@
+<section class="nav-desktop-container">
+
+	<!--DESKTOP HEADER-->
+	<header role="banner">
+		
+		<section class="row collapse align-center full-width">
+			<div class="column large-2 empty-left"></div>
+			<div class="column">
+				<dsb-nav [IsLogoVisible]="true"></dsb-nav>				
+			</div>
+			<div class="column large-2 empty-right">
+				<dsp-social-media-list></dsp-social-media-list>	
+			</div>
+		</section>
+
+	</header>
+
+</section>
+
+<!--BREADCRUMBS-->
+<dsb-breadcrumbs></dsb-breadcrumbs>
+
+<main>
+	<!--PAGE CONTENT INJECTED HERE-->
+	<ng-content></ng-content>
+</main>
+
+
+<!--FOOTER-->
+<dsb-desktop-footer></dsb-desktop-footer>

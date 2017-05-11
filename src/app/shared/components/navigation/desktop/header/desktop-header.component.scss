@@ -1,0 +1,234 @@
+@import '../../../../../../styles/variables';
+
+
+
+/* SMALL - PORTRAIT */
+//20rem = 320px
+@media only screen and (max-width : $smallPortraitMaxWidth)
+{
+}
+
+
+/* SMALL - LANDSCAPE */
+//20.0625rem = 321px	
+//39.9999rem = 639px
+@media only screen and (min-width : $smallLandscapeMinWidth) and (max-width : $smallLandscapeMaxWidth) and (orientation : landscape)
+{	
+}
+
+
+/* CUSTOM - 500px */
+@media only screen and (min-width : 500px)
+{
+}
+
+
+/* MEDIUM */
+//40rem = 640px
+@media only screen and (min-width : $mediumMinWidth)
+{
+}
+
+
+/* MEDIUM - PORTRAIT*/
+//40rem = 640px		
+//64rem = 1024px 
+@media only screen and (min-width : $mediumMinWidth) and (max-width : $mediumMaxWidth) and (orientation : portrait)
+{
+}
+
+
+/* MEDIUM - LANDSCAPE */
+//40rem = 640px		
+//64rem = 1024px
+@media only screen and (min-width : $mediumMinWidth) and (max-width : $mediumMaxWidth) and (orientation : landscape)
+{	
+}
+
+
+/* MEDIUM - MID */
+//48rem = 768px
+@media only screen and (min-width : $mediumMidWidth)
+{
+}
+
+
+/* LARGE */
+//64.0625rem = 1025px
+@media only screen and (min-width: $largeMinWidth)
+{
+	header
+	{
+		&[role=banner]
+		{
+			position: fixed;
+			top: 0;
+			left: 0;
+			right: 0;
+			z-index: 100;
+			opacity: 0.95;	
+
+			.row.full-width
+			{
+				box-shadow: 0 4px 2px -2px rgba(0,0,0,0.3);
+				max-width: 100%;
+			}				
+
+			.empty-left
+			{
+				background-color: $color-white;
+			}
+
+			.empty-right
+			{
+				background-color: $color-primary;
+			}
+		}
+
+		dsp-social-media-list
+		{
+			line-height: 3rem;
+			
+			/deep/ dsp-social-media-item
+			{
+				display: inline-block;
+		    font-size: 1.75rem;
+    		margin: 0.5rem;
+
+				a
+				{
+					color: $color-white;
+				}
+			}
+		}
+
+		dsb-nav
+		{
+			/deep/ 
+			{
+				ul.menu-bar
+				{
+					align-items: stretch;
+					background-color: $color-primary;
+					display: flex;
+					flex-flow: row nowrap;
+					margin: 0;
+					overflow-x: hidden;
+					overflow-y: visible;
+					padding: 0;
+
+					> li
+					{
+						align-items: stretch;	
+						background-color: $color-primary;
+						cursor:pointer;		
+						display: flex;
+						flex: 0 0 auto;
+
+						&.active
+						{
+							background-color: $color-secondary;
+						}
+
+						&.logo
+						{
+							background-color: $color-white;
+							margin: 0;
+							position: relative;
+
+							>a
+							{
+								padding: 0;
+							}
+
+							&:hover
+							{
+								background-color: $color-white;
+							}			
+						}
+
+						&.home
+						{
+							width: 145px;
+							padding-left: 30px;				
+						}
+
+						&:hover
+						{
+							background-color: $color-tertiary;
+						}
+
+						> a
+						{
+							color: $color-white;				
+							display: flex;
+							font-family: $font-family-subheader;
+							font-size: 1.5rem;
+							height: 100%;
+							line-height: 64px;
+							padding: 0rem 1.5rem;
+							text-decoration: initial;				
+						}
+					}
+
+					h1
+					{
+						a
+						{
+							background-image: url(/assets/images/logo_199x60.png);
+							background-position: center center;
+							background-repeat: no-repeat;
+							color: transparent;
+							font: 0/0 a;
+							text-shadow: none;
+							display: block;
+							position: relative;
+							width: 233px;
+							z-index: 2;
+							height: 64px;			
+						}	
+
+						&::before
+						{
+							background: $color-white;
+							margin-left: -1px;			
+							width: 240px;
+							z-index: 1;	
+						}
+
+						&::before,
+						&::after
+						{
+							-webkit-transform: skew(-15deg, 0);
+							-ms-transform: skewX(-15deg) skewY(0);
+							transform: skew(-15deg, 0);
+							content: '';
+							display: block;
+							height: 64px;
+							position: absolute;
+							top: 0;			
+						}	
+
+						&::after
+						{
+							background: $color-tertiary;
+							width: 245px;
+							z-index: 0;			
+						}		
+					}		
+				}	
+			}		
+		}		
+	}
+
+
+
+
+
+	main
+	{	
+		background-color: $color-background;
+		margin-top: 64px;
+		min-height: 70vh;
+	}	
+}
