@@ -1,0 +1,40 @@
+<section class="page-container" *ngFor="let entry of PageData">
+	<!-- SCREWTOP INTRO -->
+	<div class="page-container__header">
+
+		<!--ABOUT-US MEDIA-->
+		<!--<cdf-media [mediaModel]="PageData.MediaModel"></cdf-media>
+
+		<div class="page-container__header__content">
+			<section class="row collapse align-middle">
+				<div class="columns align-self-middle">
+					<h2>{{entry.Tagline}}</h2>
+					<h3>{{entry.Subtagline}}</h3>
+				</div>
+			</section>
+		</div> -->
+	</div>
+
+	<div class="page-container__content">
+		<section class="row align-center">
+			<div class="columns small-10 medium-9 large-8">
+				<h2>{{entry.Title}}</h2>
+				<h4 [innerHTML]="entry.Description"></h4>
+			</div>
+		</section>
+	</div>
+	<section class="row align-center">
+		<div class="columns small-10 medium-9 large-8">
+			<span [innerHTML]="entry.OurHistory"></span>
+		</div>
+	</section>
+	<div class="page-container__tags">
+		<div class="row align-center">
+			<div class="columns small-10 medium-9 large-8">
+				<h4 class="tagline-title">Tags: </h4>
+				<div class="tagline">{{entry.Tagline}}</div>
+				<div class="tagline">{{entry.Subtagline}}</div>
+			</div>
+		</div>
+	</div>
+</section>

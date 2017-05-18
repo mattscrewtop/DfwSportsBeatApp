@@ -34,19 +34,14 @@ export const environment =
 			{
 				HomePage: '95738830dd230b83cb8d',
 				AboutUsPage: 'ac40bcafcfc352dcb337',
-				ContactUsPage: 'ecf5ce7f3a63c624f27f'
+				ContactUsPage: 'ecf5ce7f3a63c624f27f',
+				BlogPage: '5cfa5ee4fa176e35815d'
 			}
 		},
 		CDF_API:
 		{
 			ROOT_URL: 'http://cdf-api-local.webapi.cdf.cloud/api/',
 			ApplicationKey: "42d28aaf-0cef-4433-bb9b-0981fd06375a",
-			Content:
-			{
-			}
-		},
-		NODE_API: {
-			ROOT_URL: 'http://localhost:3000/api',
 			Content:
 			{
 			}

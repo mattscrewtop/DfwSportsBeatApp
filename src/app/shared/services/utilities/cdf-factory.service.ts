@@ -27,7 +27,15 @@ export class CdfFactoryService
 	public static GetCloudCMSContactUsPageUrl() : string
 	{
 		return CdfFactoryService.BuildCloudCmsUrlForNodeId(environment.CLOUD_CMS.Content.ContactUsPage);
+	};
+
+	//CONSTRUCT URL FOR CLOUD CMS BLOG PAGE...	
+	public static GetCloudCMSBlogPageUrl() : string
+	{
+		return CdfFactoryService.BuildCloudCmsUrlForNodeId(environment.CLOUD_CMS.Content.BlogPage);
 	};	
+
+
 
 	/*------------------------------------------------------------------------------------------------
 	CDF UTILITY HELPERS
@@ -140,10 +148,4 @@ export class CdfFactoryService
 
 		return mediaUrl + '/' + nodeId + '?branchId=' + branchId;
 	};
-
-	public static getNodeApiUrl(nodeId: string) : string 
-	{
-		let nodeUrl = environment.NODE_API.ROOT_URL;
-		 return nodeUrl + '/' + nodeId;
-	}
 }

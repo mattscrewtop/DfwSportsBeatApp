@@ -1,4 +1,64 @@
-@import '../../../../../../styles/variables';
+@import '../../../../styles/variables';
+
+.page-container
+{
+	&__header
+	{
+		&__content
+		{
+			.row
+			{
+				height: 15rem;
+			}
+
+			h2
+			{
+				font-size: 2.125rem;
+				padding: 1.125rem 1.5rem 0;
+			}
+
+			h3
+			{
+				color: $color-grey;
+				padding: 1rem 1.5rem .5rem;			
+			}			
+		}
+	}
+		
+	&__background-image
+	{
+		&__content
+		{
+			padding-top: 1rem;
+		}			
+	}
+
+	&__content 
+	{
+		display: inline-block;
+    width: 100%;
+
+    h2 
+    {
+    	color: $color-secondary;
+    }
+	}
+
+	&__tags
+	{
+		margin-top: 1rem;
+
+		.tagline 
+		{
+			background-color: $color-primary;
+			border-radius: 20px;
+			color: white;
+			display: inline-block;
+			margin-top: 1rem;
+			padding: 5px 10px;
+		}
+	}
+}
 
 
 /* SMALL - PORTRAIT */
@@ -49,6 +109,11 @@
 //48rem = 768px
 @media only screen and (min-width : $mediumMidWidth)
 {
+	cdf-media
+	{
+		height: 20rem;
+		width: initial;
+	}
 }
 
 
@@ -56,60 +121,4 @@
 //64.0625rem = 1025px
 @media only screen and (min-width: $largeMinWidth)
 {
-	footer
-	{
-		&[role=topFooter]
-		{
-			background-color: $color-background-footer;
-			border-top: solid 1px $color-border;
-			height: 30rem;
-			margin-top: 4rem;
-			padding: 6rem 0;
-
-
-			dsb-nav
-			{
-				/deep/
-				{
-					ul.menu-bar
-					{
-						list-style-type: none;
-						margin: 0;
-						padding: 0;
-
-						>li
-						{
-							color:$color-grey;
-							font-size: 1.5rem;
-							margin: 1rem 0;
-						}
-					}
-				}
-			}
-
-			dsp-social-media-list
-			{
-				/deep/ dsp-social-media-item
-				{
-					font-size: 3rem;
-
-					a
-					{
-						color: $color-grey;
-					}
-				}
-			}			
-		}	
-
-		&[role=bottomFooter]
-		{
-			background-color: $color-background-footer-bottom;
-			border-top: solid 1px $color-border;
-			color: $color-grey-medium;
-			font-family: $font-family-text;
-			font-size: 0.75rem;
-			height: 4rem;
-			line-height: 4rem;
-		}
-	}
 }
