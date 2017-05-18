@@ -13,9 +13,8 @@ cdf-video-background
 		{
 			h2
 			{
-				font-size: 3rem;
-				padding: 0 1.5rem 0;
-				text-transform: capitalize;
+				font-size: 2.125rem;
+				padding: 0 1.5rem 0;			
 			}
 
 			.row
@@ -145,6 +144,16 @@ cdf-video-background
 		{
 			&__content
 			{
+				h1
+				{
+					&.logo
+					{
+						background-image: url("/assets/images/logo_532x160.png");
+						height: 160px;
+						width: 532px;	
+					}
+				}
+
 				h2
 				{
 					font-size: 4rem;
