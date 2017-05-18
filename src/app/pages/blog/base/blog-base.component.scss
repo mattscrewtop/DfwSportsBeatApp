@@ -1,0 +1,124 @@
+@import '../../../../styles/variables';
+
+.page-container
+{
+	&__header
+	{
+		&__content
+		{
+			.row
+			{
+				height: 15rem;
+			}
+
+			h2
+			{
+				font-size: 2.125rem;
+				padding: 1.125rem 1.5rem 0;
+			}
+
+			h3
+			{
+				color: $color-grey;
+				padding: 1rem 1.5rem .5rem;			
+			}			
+		}
+	}
+		
+	&__background-image
+	{
+		&__content
+		{
+			padding-top: 1rem;
+		}			
+	}
+
+	&__content 
+	{
+		display: inline-block;
+    width: 100%;
+
+    h2 
+    {
+    	color: $color-secondary;
+    }
+	}
+
+	&__tags
+	{
+		margin-top: 1rem;
+
+		.tagline 
+		{
+			background-color: $color-primary;
+			border-radius: 20px;
+			color: white;
+			display: inline-block;
+			margin-top: 1rem;
+			padding: 5px 10px;
+		}
+	}
+}
+
+
+/* SMALL - PORTRAIT */
+//20rem = 320px
+@media only screen and (max-width : $smallPortraitMaxWidth)
+{
+}
+
+
+/* SMALL - LANDSCAPE */
+//20.0625rem = 321px	
+//39.9999rem = 639px
+@media only screen and (min-width : $smallLandscapeMinWidth) and (max-width : $smallLandscapeMaxWidth) and (orientation : landscape)
+{	
+}
+
+
+/* CUSTOM - 500px */
+@media only screen and (min-width : 500px)
+{
+}
+
+
+/* MEDIUM */
+//40rem = 640px
+@media only screen and (min-width : $mediumMinWidth)
+{
+}
+
+
+/* MEDIUM - PORTRAIT*/
+//40rem = 640px		
+//64rem = 1024px 
+@media only screen and (min-width : $mediumMinWidth) and (max-width : $mediumMaxWidth) and (orientation : portrait)
+{
+}
+
+
+/* MEDIUM - LANDSCAPE */
+//40rem = 640px		
+//64rem = 1024px
+@media only screen and (min-width : $mediumMinWidth) and (max-width : $mediumMaxWidth) and (orientation : landscape)
+{	
+}
+
+
+/* MEDIUM - MID */
+//48rem = 768px
+@media only screen and (min-width : $mediumMidWidth)
+{
+	cdf-media
+	{
+		height: 20rem;
+		width: initial;
+	}
+}
+
+
+/* LARGE */
+//64.0625rem = 1025px
+@media only screen and (min-width: $largeMinWidth)
+{
+}
