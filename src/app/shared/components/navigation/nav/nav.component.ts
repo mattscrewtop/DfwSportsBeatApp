@@ -30,7 +30,6 @@ export class NavComponent implements OnInit
 	onNavItemCicked()
 	{ 
 		//NOTIFY DESKTOP PARENT COMPONENT OF HERO MEDIA FEATURE FROM CMS...
-		this.NotifyNavItemClicked.emit(true);
-		window.scrollTo(0, 0);
+		this.NotifyNavItemClicked.emit(true);	
 	}
 }
