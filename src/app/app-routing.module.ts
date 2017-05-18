@@ -13,6 +13,7 @@ export const routes: Routes =
 	//LAZY LOADED:
 	{ path: 'about-us', 			loadChildren: './pages/about-us/about-us.module#AboutUsModule' },
 	{ path: 'contact-us', 			loadChildren: './pages/contact-us/contact-us.module#ContactUsModule' },
+	{ path: 'blog', 			loadChildren: './pages/blog/blog.module#BlogModule' },
 	
 	//404 ROUTE
 	//{ path: '**', component: Four04Component }
