@@ -89,18 +89,13 @@
 
 			dsp-social-media-list
 			{
-				display: flex;
-				justify-content: center;
-				margin-top: 1rem;
-
 				/deep/ dsp-social-media-item
 				{
 					font-size: 3rem;
-			    margin: 0 1rem;
 
 					a
 					{
-						color: $color-grey-medium;
+						color: $color-grey;
 					}
 				}
 			}			
