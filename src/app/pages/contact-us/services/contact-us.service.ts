@@ -1,4 +1,5 @@
 import { Injectable } 			from '@angular/core';
+import { Http, Headers, RequestOptions, URLSearchParams } from '@angular/http'; 
 import { Observable } 			from 'rxjs/Rx';
 import { CdfContactUsFormModel }from '@cdf/cdf-ng-contact-us-form/lib';
 import
@@ -17,7 +18,8 @@ export class ContactUsService
 	private PageData: ContactUsPageModel;
 
 	constructor(
-		private cdfDataService: CdfDataService
+		private cdfDataService: CdfDataService,
+		private http: Http
 	)
 	{
 	}
@@ -71,10 +73,29 @@ export class ContactUsService
 	//SEND FORM TO SERVER FOR SUBMISSION...	
 	SendEmail(formModel: CdfContactUsFormModel): Observable<any>
 	{ 
+		if(!formModel) {
 		return Observable.create(observer => 
 		{
 			observer.next(formModel);
 			observer.complete();
 		});	
 	}
+		else
+		{ 
+			let action: string = 'sendmail' 
+			let url: string = CdfFactoryService.getNodeApiUrl(action);
+			let emailid = '';
+			let headers = new Headers({ 'Content-Type': 'application/json' });
+    	let options = new RequestOptions({ headers: headers });
+
+      return this.http.post(url, formModel, options)
+								.map(this.extractData);
+		}
+	}
+
+	private extractData(res: Response | any) 
+	{
+    let body = res.json();
+    return body.data || { };
+  }
 }

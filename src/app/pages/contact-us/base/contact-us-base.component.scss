@@ -3,6 +3,7 @@
 cdf-media
 {
 	height: 15rem;
+	width: initial;
 }
 
 .page-container
@@ -18,8 +19,9 @@ cdf-media
 
 			h2
 			{
-				font-size: 2.125rem;
+				font-size: 3rem;
 				padding: 1.125rem 1.5rem 0;
+				text-transform: capitalize;
 			}
 
 			h3
@@ -45,7 +47,53 @@ cdf-media
 	}
 }
 
+dsp-phone-number-list
+{
+	/deep/ 
+	{
+		a 
+		{
+			color: #012e5a;
+			font-family: "Fjalla One", serif;
+			padding: 0.5rem;
+			position: relative;
+			text-align: left;
+		}
+	}
+}
 
+dsp-address-list
+{
+	/deep/
+	{
+		.vcard
+		{
+			a {
+		    color: #012e5a;
+			}
+		}			
+	}
+}	
+
+dsp-social-media-list
+{
+	/deep/
+	{
+		font-size: 1.25rem;
+
+		dsp-social-media-item
+		{
+			display: inline-block;
+			font-size: 2rem;
+			margin: 0 0.5rem;
+
+			a
+			{
+				color: $color-grey-medium;
+			}				
+		}						
+	}
+}
 
 /* SMALL - PORTRAIT */
 //20rem = 320px
@@ -92,6 +140,7 @@ cdf-media
 				h2
 				{
 					font-size: 4rem;
+					line-height: 1.125;
 					padding: 1.5rem 0;			
 				}	
 

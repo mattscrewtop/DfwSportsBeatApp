@@ -4,6 +4,30 @@
 cdf-media
 {
 	height: 17rem;
+	width: initial;
+}
+
+.page-container
+{
+	&__header
+	{
+		&__content
+		{
+
+			h2
+			{
+				font-size: 3rem;
+				text-transform: capitalize;
+			}
+		}
+	}
+}
+h2
+{
+	&.section-title
+	{
+		border-bottom: 1px solid rgba(10, 10, 10, 0.25);
+	}
 }
 
 
@@ -60,6 +84,21 @@ cdf-media
 		height: 20rem;
 		width: initial;
 	}		
+
+	.page-container
+	{
+		&__header
+		{
+			&__content
+			{
+				h2
+				{
+					font-size: 4rem;
+					line-height: 1.125;
+				}	
+			}
+		}
+	}	
 }
 
 

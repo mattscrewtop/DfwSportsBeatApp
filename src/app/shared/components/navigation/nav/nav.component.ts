@@ -31,5 +31,6 @@ export class NavComponent implements OnInit
 	{ 
 		//NOTIFY DESKTOP PARENT COMPONENT OF HERO MEDIA FEATURE FROM CMS...
 		this.NotifyNavItemClicked.emit(true);	
+		window.scrollTo(0, 0);
 	}
 }

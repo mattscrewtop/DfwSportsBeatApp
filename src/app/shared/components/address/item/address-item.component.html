@@ -1,5 +1,6 @@
 <address class="vcard">
 	<div class="adr">
+		<a target="_blank" href="http://maps.google.com/?q={{addressModel.AddressLine1}} {{addressModel.City}}, {{addressModel.State}} {{addressModel.ZipCode}}">
 		<div class="street-address">{{addressModel.AddressLine1}}</div>
 		<div class="street-address" *ngIf="(addressModel.AddressLine2)">{{addressModel.AddressLine2}}</div>
 		
@@ -10,5 +11,6 @@
 		</div>
 
 		<div class="country-name">{{addressModel.Country}}</div>
+		</a>
 	</div>
 </address>

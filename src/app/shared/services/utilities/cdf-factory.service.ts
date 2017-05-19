@@ -148,4 +148,10 @@ export class CdfFactoryService
 
 		return mediaUrl + '/' + nodeId + '?branchId=' + branchId;
 	};
+
+	public static getNodeApiUrl(nodeId: string) : string 
+	{
+		let nodeUrl = environment.NODE_API.ROOT_URL;
+		 return nodeUrl + '/' + nodeId;
+	}
 }
