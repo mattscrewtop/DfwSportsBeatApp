@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
     "name": "dfw-sports-beat-app",
     "version": "2.5.0",
     "license": "MIT",
@@ -69,3 +70,75 @@
         "sw-toolbox": "^3.4.0"
     }
 }
+=======
+  "name": "dfw-sports-beat-app",
+  "version": "2.5.0",
+  "license": "MIT",
+  "angular-cli": {},
+  "scripts": {
+    "start": "ng serve",
+    "lint": "tslint \"src/**/*.ts\"",
+    "test": "ng test",
+    "pree2e": "webdriver-manager update",
+    "e2e": "protractor",
+    "build:dev": "ng build --dev --output-path dist/dev",
+    "build:stage": "ng build --environment=stage --output-path dist/stage",
+    "build:prod": "ng build --prod --output-path dist/prod",
+    "build:ds": "npm run build:dev && npm run build:stage",
+    "build:all": "npm run build:dev && npm run build:stage && npm run build:stage",
+    "build:serve": "npm run build:dev && npm run static-serve",
+    "static-serve": "cd dist/dev && live-server --port=4219 --host=localhost --entry-file=/index.html"
+  },
+  "private": true,
+  "dependencies": {
+    "@angular/common": "2.4.7",
+    "@angular/compiler": "2.4.7",
+    "@angular/core": "2.4.7",
+    "@angular/forms": "2.4.7",
+    "@angular/http": "2.4.7",
+    "@angular/platform-browser": "2.4.7",
+    "@angular/platform-browser-dynamic": "2.4.7",
+    "@angular/router": "3.4.7",
+    "@cdf/cdf-ng": "^2.0.38",
+    "@cdf/cdf-ng-contact-us-form": "^1.0.1",
+    "@cdf/cdf-ng-media": "^1.1.3",
+    "@cdf/cdf-ng-tweet": "^1.0.0",
+    "@types/lodash": "^4.14.44",
+    "angular2-jwt": "^0.1.28",
+    "angular2-prettyjson": "^2.0.3",
+    "auth0-lock": "^10.11.0",
+    "core-js": "^2.4.1",
+    "foundation-sites": "^6.3.0",
+    "lodash": "^4.17.3",
+    "ng2-toastr": "^1.6.0",
+    "ng2-validation": "^3.8.0",
+    "object-hash": "^1.1.5",
+    "rxjs": "5.1.0",
+    "slideout": "^1.0.1",
+    "ts-helpers": "^1.1.1",
+    "zone.js": "^0.7.6"
+  },
+  "devDependencies": {
+    "@angular/cli": "^1.0.0-rc.1",
+    "@angular/compiler-cli": "2.4.7",
+    "@types/jasmine": "2.5.41",
+    "@types/node": "^7.0.5",
+    "codelyzer": "~2.0.0-beta.1",
+    "jasmine-core": "2.5.2",
+    "jasmine-spec-reporter": "3.2.0",
+    "karma": "1.4.1",
+    "karma-chrome-launcher": "^2.0.0",
+    "karma-cli": "^1.0.1",
+    "karma-jasmine": "^1.0.2",
+    "karma-remap-istanbul": "^0.6.0",
+    "live-server": "^1.1.0",
+    "protractor": "5.1.1",
+    "ts-node": "2.1.0",
+    "tslint": "^4.0.2",
+    "typescript": "^2.1.6",
+    "webdriver-manager": "12.0.2",
+    "sw-precache": "^4.2.3",
+    "sw-toolbox": "^3.4.0"
+  }
+}
+>>>>>>> 3d2b2c4198ed027b77efea027221e9ac54c2d617

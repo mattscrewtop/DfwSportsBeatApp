@@ -1,0 +1,389 @@
+@import '../../../../styles/variables';
+
+cdf-media
+{
+	height: 15rem;
+}
+
+.page-container
+{
+	&__header
+	{
+		&__content
+		{
+			.row
+			{
+				height: 15rem;
+			}
+
+			h2
+			{
+				font-size: 2.125rem;
+				padding: 1.125rem 1.5rem 0;
+			}
+
+			h3
+			{
+				color: $color-grey;
+				padding: 1rem 1.5rem .5rem;			
+			}			
+		}
+	}
+		
+	&__background-image
+	{
+		&__content
+		{
+			padding-top: 1rem;
+		}			
+	}
+
+	&__form-container
+	{
+		margin: auto 0;
+		padding: 1.25rem;
+	}
+}
+
+
+
+/* SMALL - PORTRAIT */
+//20rem = 320px
+@media only screen and (max-width : $smallPortraitMaxWidth)
+{
+}
+
+
+/* SMALL - LANDSCAPE */
+//20.0625rem = 321px	
+//39.9999rem = 639px
+@media only screen and (min-width : $smallLandscapeMinWidth) and (max-width : $smallLandscapeMaxWidth) and (orientation : landscape)
+{	
+}
+
+
+/* CUSTOM - 500px */
+@media only screen and (min-width : 500px)
+{
+}
+
+
+/* MEDIUM */
+//40rem = 640px
+@media only screen and (min-width : $mediumMinWidth)
+{
+	.page-container
+	{			
+		&__header
+		{
+			cdf-media
+			{
+				height: 20rem;
+				width: initial;
+			}
+
+			&__content
+			{
+				.row
+				{
+					height: 20rem;
+				}
+
+				h2
+				{
+					font-size: 4rem;
+					padding: 1.5rem 0;			
+				}	
+
+				h3
+				{
+					font-size: 2rem;
+					padding: 1rem 0;			
+				}								
+			}
+		}
+
+		&__background-image
+		{
+			position: relative;
+
+			cdf-media
+			{
+				height: 25rem;
+				width: initial;
+
+				.row
+				{
+					height: 25rem;
+				}				
+			}
+
+			&__content
+			{
+				bottom: 0;
+				left: 50%;
+				position: absolute;
+				right: 0;
+				top: 0;
+			}			
+		}
+	}	
+
+	h2
+	{
+		&.section-title
+		{
+			font-size: 1.25rem;
+		}
+	}	
+
+	.callout
+	{
+		padding: 0.5rem 1rem;
+	}
+
+	dsp-address-list
+	{
+		/deep/
+		{
+			.vcard
+			{
+				font-size: 1.25rem;
+			}			
+		}
+	}	
+
+
+	dsp-phone-number-list
+	{
+		/deep/
+		{
+			font-size: 1.25rem;
+
+			dl dt
+			{
+				display: none;
+			}
+		}
+	}
+
+
+	dsp-social-media-list
+	{
+		/deep/
+		{
+			font-size: 1.25rem;
+
+			dsp-social-media-item
+			{
+				display: inline-block;
+				font-size: 2rem;
+				margin: 0 0.5rem;
+
+				a
+				{
+					color: $color-grey-medium;
+				}				
+			}						
+		}
+	}	
+}
+
+
+/* MEDIUM - PORTRAIT*/
+//40rem = 640px		
+//64rem = 1024px 
+@media only screen and (min-width : $mediumMinWidth) and (max-width : $mediumMaxWidth) and (orientation : portrait)
+{
+}
+
+
+/* MEDIUM - LANDSCAPE */
+//40rem = 640px		
+//64rem = 1024px
+@media only screen and (min-width : $mediumMinWidth) and (max-width : $mediumMaxWidth) and (orientation : landscape)
+{	
+}
+
+
+/* MEDIUM - MID */
+//48rem = 768px
+@media only screen and (min-width : $mediumMidWidth)
+{
+	.page-container
+	{
+		&__header
+		{
+			cdf-media
+			{
+				height: 25rem;
+			}
+			
+			&__content
+			{
+				.row
+				{
+					height: 25rem;
+				}
+
+				h2
+				{
+					font-size: 4rem;
+					padding: 1.5rem 0;			
+				}	
+
+				h3
+				{
+					font-size: 2rem;
+					padding: 1rem 0;			
+				}								
+			}
+		}
+
+		&__background-image
+		{
+			cdf-media
+			{
+				height: 30rem;
+
+				.row
+				{
+					height: 30rem;
+				}				
+			}									
+		}	
+
+		&__form-container
+		{
+			padding-top: 4rem;
+
+			h2
+			{
+				margin-bottom: 1rem;
+			}
+		}
+	}	
+
+	h2
+	{
+		&.section-title
+		{
+			font-size: 1.5rem;
+		}
+	}	
+
+	.callout
+	{
+		padding: 1rem;
+	}
+
+	dsp-address-list
+	{
+		/deep/
+		{
+			.vcard
+			{
+				font-size: 1.5rem;
+			}			
+		}
+	}	
+
+
+	dsp-phone-number-list
+	{
+		/deep/
+		{
+			font-size: 1.5rem;
+
+			dl dt
+			{
+				display: none;
+			}
+		}
+	}
+
+
+	dsp-social-media-list
+	{
+		/deep/
+		{
+			font-size: 1.5rem;
+
+			dsp-social-media-item
+			{
+				font-size: 3rem;
+			}						
+		}
+	}		
+}
+
+
+/* LARGE */
+//64.0625rem = 1025px
+@media only screen and (min-width: $largeMinWidth)
+{
+
+	.page-container
+	{
+		&__background-image
+		{
+			cdf-media
+			{
+				height: 35rem;
+
+				.row
+				{
+					height: 35rem;
+				}				
+			}			
+		}			
+	}	
+
+
+	h2
+	{
+		&.section-title
+		{
+			font-size: 1.75rem;
+		}
+	}	
+
+	dsp-address-list
+	{
+		/deep/
+		{
+			.vcard
+			{
+				font-size: 1.75rem;
+			}			
+		}
+	}	
+
+
+	dsp-phone-number-list
+	{
+		/deep/
+		{
+			font-size: 1.75rem;
+
+			dl dt
+			{
+				display: none;
+			}
+		}
+	}
+
+
+	dsp-social-media-list
+	{
+		/deep/
+		{
+			font-size: 1.75rem;
+
+			dsp-social-media-item
+			{
+				font-size: 4rem;
+			}						
+		}
+	}				
+}

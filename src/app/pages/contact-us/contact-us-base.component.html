@@ -1,0 +1,74 @@
+<section class="page-container" *ngIf="(PageData)">
+
+	<section class="page-container__header">
+		<!--MEDIA-->
+		<cdf-media [mediaModel]="PageData.BackgroundImageModel"></cdf-media>
+
+		<!--MESSAGE-->
+		<section class="page-container__header__content text-center">
+
+			<div class="row align-middle">
+				<div class="column flex-container flex-dir-column">
+
+					<!--TAGLINES-->
+					<div class="flex-child-shrink">
+						<h2>{{PageData.Tagline}}</h2>
+						<h3>{{PageData.SubTagline}}</h3>
+					</div>
+
+					<!--CALL-TO-ACTION-->
+					<div class="flex-child-shrink">
+						<a class="button hollow opaque small radius" routerLink="/contact-us" fragment="say-hello" pageScroll href="#sayHello">Say Hello...</a>
+					</div>
+
+				</div>
+			</div>
+
+		</section>
+	</section>
+
+	<!--MAP-->
+	<section class="page-container__background-image">
+		<!--MEDIA-->
+		<cdf-media [mediaModel]="PageData.MapImage" class="show-for-medium"></cdf-media>
+
+		<section class="page-container__background-image__content">
+
+			<div class="row align-middle">
+				<div class="column medium-shrink flex-container flex-dir-column">
+
+					<!--ADDRESS LIST-->
+					<div class="callout flex-child-shrink">
+						<h2 class="section-title">Address</h2>
+						<dsp-address-list></dsp-address-list>
+					</div>
+
+					<!--PHONE NUMBER LIST-->
+					<div class="callout flex-child-shrink">
+						<h2 class="section-title">Give Us A Call</h2>
+						<dsp-phone-number-list></dsp-phone-number-list>						
+					</div>
+
+					<!--SOCIAL MEDIA LIST-->
+					<div class="callout flex-child-shrink">
+						<h2 class="section-title">Social Connections</h2>
+						<dsp-social-media-list></dsp-social-media-list>						
+					</div>
+
+				</div>
+			</div>
+
+		</section>
+
+	</section>
+
+	<!--CONTACT US FORM-->
+	<section class="page-container__form-container">
+		<section class="row  align-center collapse">
+			<div class="column small-12 medium-10 large-6">
+				<h2 id="sayHello">Send Us A Message...</h2>
+				<cdf-contact-us-form (NotifyFormSubmitted)="onNotifyFormSubmitted($event)"></cdf-contact-us-form>
+			</div>
+		</section>
+	</section>
+</section>
