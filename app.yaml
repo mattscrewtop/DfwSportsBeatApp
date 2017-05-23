@@ -4,9 +4,10 @@ threadsafe: yes
 # [END runtime]
 
 handlers:
-- url: /(.*\.(gif|png|jpg|css|js)(|\.map))$
+
+- url: /(.+)
   static_files: dist/\1
-  upload: dist/(.*)(|\.map)
+  upload: dist/(.*)
 
 - url: /(.*)
   static_files: dist/index.html
