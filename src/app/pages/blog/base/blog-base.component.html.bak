@@ -32,7 +32,8 @@
 		<div class="row align-center">
 			<div class="columns small-10 medium-9 large-8">
 				<h4 class="tagline-title">Tags: </h4>
-				<div class="tagline" *ngFor="let tag of entry.Tagline">{{tag}}</div>
+				<div class="tagline">{{entry.Tagline}}</div>
+				<div class="tagline">{{entry.Subtagline}}</div>
 			</div>
 		</div>
 	</div>
