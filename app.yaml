@@ -8,14 +8,6 @@ handlers:
   static_files: dist/index.html
   upload: dist/index.html
 
-- url: /(.+)
-  static_files: dist/\1
-  upload: dist/(.*)
-
-- url: /
-  static_files: dist/index.html
-  upload: dist/index.html
-
 # Temporary setting to keep gcloud from uploading not required files for deployment
 skip_files:
 - ^node_modules$
