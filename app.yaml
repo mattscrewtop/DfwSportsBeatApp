@@ -4,14 +4,14 @@ threadsafe: yes
 # [END runtime]
 
 handlers:
-
-- url: /(.+)
+- url: /(.*\.(gif|png|jpg|css|js|otf|eot|svg|ttf|woff|woff2)(|\.map))$
   static_files: dist/\1
-  upload: dist/(.*)
+  upload: dist/(.*)(|\.map)
 
 - url: /(.*)
   static_files: dist/index.html
   upload: dist/index.html
+
 
 # Temporary setting to keep gcloud from uploading not required files for deployment
 skip_files:
