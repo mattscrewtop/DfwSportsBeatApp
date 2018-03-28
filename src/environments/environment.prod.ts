@@ -27,14 +27,15 @@ export const environment =
 		CLOUD_CMS:
 		{
 			ROOT_URL: 'https://api.cloudcms.com',
-			RepositoryId: '0fdddfe701d019e22471',
-			BranchId: 'c27456c5add2b76e6f5a',
+			RepositoryId: '87cc5947b23778a49bd9',
+			BranchId: '6370b8a9ce4255f9697e',
 			MEDIA_URL: 'https://a022bcec-0c8d-4f5d-b4ad-338c24b49149-hosted.cloudcms.net/static/node',
 			Content:
 			{
 				HomePage: '95738830dd230b83cb8d',
 				AboutUsPage: 'ac40bcafcfc352dcb337',
-				ContactUsPage: 'ecf5ce7f3a63c624f27f'
+				ContactUsPage: 'ecf5ce7f3a63c624f27f',
+				BlogPage: '5cfa5ee4fa176e35815d'
 			}
 		},
 		CDF_API:
