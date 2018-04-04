@@ -29,7 +29,7 @@ export const environment =
 			ROOT_URL: 'https://api.cloudcms.com',
 			RepositoryId: '87cc5947b23778a49bd9',
 			BranchId: '8bceaeb513bcd9750536',
-			MEDIA_URL: 'https://cbb8894f-796b-429a-a2fd-7c05a3c44fdb-hosted.cloudcms.net/static/node',
+			MEDIA_URL: 'https://a022bcec-0c8d-4f5d-b4ad-338c24b49149-hosted.cloudcms.net/static/node',
 			Content:
 			{
 				HomePage: '95738830dd230b83cb8d',

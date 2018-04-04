@@ -8,7 +8,7 @@ export const environment =
 		production: true,
 		envName: 'dev',
 		name: 'DFW SportsBeat',
-		version: '2.5.3',
+		version: '2.5.10',
 		JW_PLAYER:
 		{
 			key: 'wNPiCrI15qDzPs7fkSNfvlMlvxwVXL5ZnCE7dg=='
@@ -47,7 +47,7 @@ export const environment =
 			}
 		},
 		NODE_API: {
-			ROOT_URL: 'https://webapi.cdf.cloud/api',
+			ROOT_URL: 'http://localhost:3000/api',
 			Content:
 			{
 			}

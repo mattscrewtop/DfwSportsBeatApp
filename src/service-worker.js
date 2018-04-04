@@ -5,7 +5,7 @@
 
 
 // tick this to make the cache invalidate and update
-const CACHE_VERSION = 45220;
+const CACHE_VERSION = 2510;
 const CURRENT_CACHES =
 	{
 		'app-shell': 'app-shell-cache-v' + CACHE_VERSION,
@@ -15,15 +15,15 @@ const CURRENT_CACHES =
 //APP SHELL FILES...
 var filesToCache = 
 [
-	'home',
-	'inline.bundle.js',
-	'main.bundle.js',
-	'styles.bundle.js',
-	'vendor.bundle.js'
+	'/',
+	'/inline.bundle.js',
+	'/main.bundle.js',
+	'/styles.bundle.js',
+	'/vendor.bundle.js'
 	//'/manifest.json'
 ];
 
-var cacehableRequestsList = ['dfwsportsbeat','googleapis','gstatic','cdf','cloudcms','jwpcdn','jwpltx'];
+var cacehableRequestsList = ['dfwsportsbeat','googleapis','gstatic','cdf','cloudcms','jwpcdn','jwpltx','twitter','twimg','ytimg','youtube'];
 
 
 //WHILE INSTALLING SERVICE WORKER, CACHE APP SHELL...

@@ -2,7 +2,7 @@
   "name": "DFW SportsBeat",
   "short_name": "DFW SportsBeat",
   "description": "DFW SportsBeat",
-  "start_url": "home",
+  "start_url": "/",
   "icons": [
     {
       "src": "assets/images/DFW-Logo-Isolated.png",
