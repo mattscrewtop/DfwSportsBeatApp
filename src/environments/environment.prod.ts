@@ -8,7 +8,7 @@ export const environment =
 		production: true,
 		envName: 'dev',
 		name: 'DFW SportsBeat',
-		version: '2.5.1',
+		version: '2.5.3',
 		JW_PLAYER:
 		{
 			key: 'wNPiCrI15qDzPs7fkSNfvlMlvxwVXL5ZnCE7dg=='

@@ -5,10 +5,10 @@
 
 export const environment =
 	{
-		production: false,
+		production: true,
 		envName: 'dev',
 		name: 'DFW SportsBeat',
-		version: '2.5.0',
+		version: '2.5.3',
 		JW_PLAYER:
 		{
 			key: 'wNPiCrI15qDzPs7fkSNfvlMlvxwVXL5ZnCE7dg=='
@@ -40,14 +40,14 @@ export const environment =
 		},
 		CDF_API:
 		{
-			ROOT_URL: 'http://cdf-api-local.webapi.cdf.cloud/api/',
+			ROOT_URL: 'https://webapi.cdf.cloud/api/',
 			ApplicationKey: "42d28aaf-0cef-4433-bb9b-0981fd06375a",
 			Content:
 			{
 			}
 		},
 		NODE_API: {
-			ROOT_URL: 'http://localhost:3000/api',
+			ROOT_URL: 'https://webapi.cdf.cloud/api',
 			Content:
 			{
 			}

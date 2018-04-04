@@ -1,7 +1,7 @@
 {
 	"project": 
 	{
-		"version": "2.5.1",
+		"version": "2.5.3",
 		"name": "dfw-sports-beat-progressive-app"
 	},
 	"apps": 
@@ -12,7 +12,9 @@
 			"assets": 
 			[
 				"assets",
-				"favicon.ico"
+				"favicon.ico",
+  				"service-worker.js",
+  				"manifest.json"
 			],
 			"index": "index.html",
 			"main": "main.ts",
