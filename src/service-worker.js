@@ -15,12 +15,7 @@ const CURRENT_CACHES =
 //APP SHELL FILES...
 var filesToCache = 
 [
-	'/',
-	'/index.html',
-	'/main.bundle.js',
-	'/vendor.bundle.js',
-	'/inline.bundle.js',
-	'/styles.bundle.js'
+	'/'
 	//'/manifest.json'
 ];
 
