@@ -1,11 +1,11 @@
 // Load the sw-tookbox library.
-importScripts('./sw-toolbox.js');
-importScripts('./runtime-caching.js');
+//importScripts('./sw-toolbox.js');
+//importScripts('./runtime-caching.js');
 
 
 
 // tick this to make the cache invalidate and update
-const CACHE_VERSION = 45150;
+const CACHE_VERSION = 45200;
 const CURRENT_CACHES =
 	{
 		'app-shell': 'app-shell-cache-v' + CACHE_VERSION,
@@ -19,7 +19,7 @@ var filesToCache =
 	//'/manifest.json'
 ];
 
-var cacehableRequestsList = ['dfwsportsbeat', 'googleapis', 'gstatic', 'jwpcdn', 'cloudcms', 'cdf'];
+var cacehableRequestsList = ['dfwsportsbeat'];
 
 
 //WHILE INSTALLING SERVICE WORKER, CACHE APP SHELL...
