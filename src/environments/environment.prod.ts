@@ -45,5 +45,11 @@ export const environment =
 			Content:
 			{
 			}
+		},
+		NODE_API: {
+			ROOT_URL: 'http://localhost:3000/api',
+			Content:
+			{
+			}
 		}
 	};

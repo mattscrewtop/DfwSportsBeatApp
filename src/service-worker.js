@@ -5,7 +5,7 @@ importScripts('./runtime-caching.js');
 
 
 // tick this to make the cache invalidate and update
-const CACHE_VERSION = 45090;
+const CACHE_VERSION = 45100;
 const CURRENT_CACHES =
 	{
 		'app-shell': 'app-shell-cache-v' + CACHE_VERSION,
@@ -24,7 +24,7 @@ var filesToCache =
 	//'/manifest.json'
 ];
 
-var cacehableRequestsList = ['dfwsportsbeat', 'googleapis', 'cloudcms', 'cdf'];
+var cacehableRequestsList = ['dfwsportsbeat', 'googleapis'];
 
 
 //WHILE INSTALLING SERVICE WORKER, CACHE APP SHELL...

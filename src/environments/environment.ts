@@ -5,7 +5,7 @@
 
 export const environment =
 	{
-		production: true,
+		production: false,
 		envName: 'dev',
 		name: 'DFW SportsBeat',
 		version: '2.5.0',
