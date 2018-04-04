@@ -1,6 +1,6 @@
 // Load the sw-tookbox library.
-// importScripts('./sw-toolbox.js');
-// importScripts('./runtime-caching.js');
+importScripts('./sw-toolbox.js');
+importScripts('./runtime-caching.js');
 
 
 
@@ -17,10 +17,14 @@ var filesToCache =
 [
 	'/',
 	'/index.html',
+	'/main.bundle.js',
+	'/vendor.bundle.js',
+	'/inline.bundle.js',
+	'/styles.bundle.js'
 	//'/manifest.json'
 ];
 
-var cacehableRequestsList = ['solutiaconsulting', 'googleapis', 'api.cloudcms.com', 'cloudcms.net'];
+var cacehableRequestsList = ['dfwsportsbeat', 'googleapis', 'cloudcms', 'cdf'];
 
 
 //WHILE INSTALLING SERVICE WORKER, CACHE APP SHELL...
@@ -101,16 +105,16 @@ self.addEventListener('fetch', (event) =>
 		if (cacehableRequestsList.some(function(v) { return event.request.url.indexOf(v) >= 0; })) 
 		{
 			// There's at least one
-			//console.log('WILL BE CACHED... ', event.request.url);
+			console.log('WILL BE CACHED... ', event.request.url);
 			isRequestCacheable = true;
 		}	  
 
-		// if (!isRequestCacheable)
-		// { 
-		// 	console.log('--------- REQUEST URL... ', event.request.url);
-		// 	console.log('--------- IS CACHEABLE... ', isRequestCacheable);
-		// 	console.log('-------------------------------------------------');
-		// }	
+		if (!isRequestCacheable)
+		{ 
+			console.log('--------- REQUEST URL... ', event.request.url);
+			console.log('--------- IS CACHEABLE... ', isRequestCacheable);
+			console.log('-------------------------------------------------');
+		}	
 
 		//ONLY DEAL WITH APP SHELL CACHE OR IF REQUEST IS FROM A CACHEABLE SOURCE...
 		if(isRequestCacheable || isAppShellCache)
@@ -125,7 +129,7 @@ self.addEventListener('fetch', (event) =>
 					// and we can just return it.			
 					if (response)
 					{
-						//console.log('RESPONSE FOUND FOR %s IN CACHE....', event.request.url);
+						console.log('RESPONSE FOUND FOR %s IN CACHE....', event.request.url);
 
 						//NOW PULL REQUEST FROM NETWORK FOR LATEST CONTENT
 						fromNetworkThenUpdateCache(cacheStore, event.request).then(sendRefreshMessage);

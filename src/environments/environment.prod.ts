@@ -6,7 +6,7 @@
 export const environment =
 	{
 		production: true,
-		envName: 'prod',
+		envName: 'dev',
 		name: 'DFW SportsBeat',
 		version: '2.5.0',
 		JW_PLAYER:
@@ -28,7 +28,7 @@ export const environment =
 		{
 			ROOT_URL: 'https://api.cloudcms.com',
 			RepositoryId: '87cc5947b23778a49bd9',
-			BranchId: '6370b8a9ce4255f9697e',
+			BranchId: '8bceaeb513bcd9750536',
 			MEDIA_URL: 'https://cbb8894f-796b-429a-a2fd-7c05a3c44fdb-hosted.cloudcms.net/static/node',
 			Content:
 			{

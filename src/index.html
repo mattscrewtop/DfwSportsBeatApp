@@ -2,11 +2,29 @@
 <html>
 
 <head>
+	<title>DFW SportsBeat</title>
 	<base href="/">
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-	<title>DFW SportsBeat</title>
+
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="msapplication-tap-highlight" content="no" />
+	<meta name="description" content="DFW SportsBeat" />
+	<meta name="theme-color" content="#004990" />
+	<meta name="author" content="Matt Ferrell" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <link rel="icon" sizes="192x192" href="assets/images/icon.png" />
+    <link rel="apple-touch-icon" href="assets/images/icon.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/images/launcher-icon-2x.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/images/launcher-icon-3x.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/images/launcher-icon-4x.png" />
+    <link rel="apple-touch-startup-image" href="assets/images/splash.png" />
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+	<link rel="manifest" href="assets/manifest.json">
 
 	<!--STYLES-->
 	<link rel="icon" type="image/x-icon" href="favicon.ico">
@@ -14,6 +32,16 @@
 	<link href="https://fonts.googleapis.com/css?family=Oswald:400,700" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Karla:400,400i,700" rel="stylesheet">
+
+
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+		ga('create', 'UA-17760651-1', 'auto');
+		ga('send', 'pageview');
+	</script>
 </head>
 
 <body>
@@ -106,7 +134,7 @@
 		//LOAD SERVICE WORKER...
 		if ('serviceWorker' in navigator) 
 		{
-			navigator.serviceWorker.register('/service-worker.js')
+			navigator.serviceWorker.register('service-worker.js')
 			.then
 			(
 				function(registration) 
