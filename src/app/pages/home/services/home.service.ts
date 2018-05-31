@@ -36,7 +36,7 @@ export class HomeService
 		{ 
 			let requestModel: CdfRequestModel = new CdfRequestModel(environment.CDF_API.ApplicationKey);
 			requestModel.AddGetRequest('https://api.twitter.com/1.1/statuses/user_timeline.json?count=20&screen_name=dfwsportsbeat');
-			requestModel.AddGetRequest('https://www.googleapis.com/youtube/v3/search?part=snippet&channelId=UCdNXQTnqhsnOa16lhbuvJ5w&order=date&maxResults=8');
+			requestModel.AddGetRequest('https://www.googleapis.com/youtube/v3/search?part=snippet&channelId=UCdNXQTnqhsnOa16lhbuvJ5w&order=date&maxResults=8&key=AIzaSyBKYjsroCoNKERWIc5vXRgfFK1Ds6Dkfik');
 			requestModel.AddGetRequest(CdfFactoryService.GetCloudCMSHomePageUrl());
 			
 			return Observable.create(observer => 
