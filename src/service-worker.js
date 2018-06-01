@@ -23,7 +23,7 @@ var filesToCache =
 	//'/manifest.json'
 ];
 
-var cacehableRequestsList = ['dfwsportsbeat','gstatic','cdf','cloudcms','jwpcdn','jwpltx','twitter','twimg','ytimg','youtube'];
+var cacehableRequestsList = ['dfwsportsbeat','googleapis','gstatic','cdf','cloudcms','jwpcdn','jwpltx','twitter','twimg','ytimg','youtube'];
 
 
 //WHILE INSTALLING SERVICE WORKER, CACHE APP SHELL...
