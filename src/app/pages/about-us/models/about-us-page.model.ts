@@ -2,7 +2,7 @@ import
 { 
 	CdfMediaModel,
 	CdfRootModel
-} 									from '@cdf/cdf-ng-media/lib';
+} 									from '@screwtopmedia/cdf-ng-media/lib';
 
 import
 { 

@@ -27,7 +27,7 @@ import { ControlFactoryDirective } 		from './directives/index';
 
 //3RD PARTY...
 import { CdfContactUsFormModule } 		from '@cdf/cdf-ng-contact-us-form/lib';
-import { CdfMediaModule } 				from '@cdf/cdf-ng-media/lib';
+import { CdfMediaModule } 				from '@screwtopmedia/cdf-ng-media/lib';
 import { CdfModule } 					from '@cdf/cdf-ng/lib';
 import { CdfTweetModule } 				from '@cdf/cdf-ng-tweet/lib';
 import { ToastModule } 					from 'ng2-toastr/ng2-toastr';

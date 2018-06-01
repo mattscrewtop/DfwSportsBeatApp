@@ -4,7 +4,7 @@ import
 { 
 	CdfMediaModel,
 	CdfVideoModel
-} 								from '@cdf/cdf-ng-media/lib';
+} 								from '@screwtopmedia/cdf-ng-media/lib';
 
 import { environment } 			from '../../../../environments/environment';
 

@@ -5,9 +5,9 @@ import
 	CdfMediaModel,
 	CdfRootModel,
 	YouTubeService
-} 									from '@cdf/cdf-ng-media/lib';
+} 									from '@screwtopmedia/cdf-ng-media/lib';
 
-import { CdfTweetModel } 			from '@cdf/cdf-ng-tweet/lib';
+import { CdfTweetModel } 			from '@screwtopmedia/cdf-ng-tweet/lib';
 
 
 import
