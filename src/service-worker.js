@@ -5,7 +5,7 @@
 
 
 // tick this to make the cache invalidate and update
-const CACHE_VERSION = 2513;
+const CACHE_VERSION = 2514;
 const CURRENT_CACHES =
 	{
 		'app-shell': 'app-shell-cache-v' + CACHE_VERSION,
@@ -23,7 +23,7 @@ var filesToCache =
 	//'/manifest.json'
 ];
 
-var cacehableRequestsList = ['dfwsportsbeat','googleapis','gstatic','cdf','cloudcms','jwpcdn','jwpltx','twitter','twimg','ytimg','youtube'];
+var cacehableRequestsList = ['dfwsportsbeat','googleapis','gstatic','cdf','cloudcms','twitter','twimg','ytimg','youtube'];
 
 
 //WHILE INSTALLING SERVICE WORKER, CACHE APP SHELL...
