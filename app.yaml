@@ -29,12 +29,19 @@ handlers:
   expiration: "0m"
   secure: always
 
-#- url: /runtime-caching\.js
-#  mime_type: application/javascript
-#  static_files: dist/runtime-caching.js
-#  upload: dist/runtime-caching\.js
-#  expiration: "0m"
-#  secure: always
+- url: /sw-toolbox\.js
+  mime_type: application/javascript
+  static_files: dist/sw-toolbox.js
+  upload: dist/sw-toolbox\.js
+  expiration: "0m"
+  secure: always
+
+- url: /runtime-caching\.js
+  mime_type: application/javascript
+  static_files: dist/runtime-caching.js
+  upload: dist/runtime-caching\.js
+  expiration: "0m"
+  secure: always
 
 #- url: /manifest\.appcache)
 #  mime_type: text/cache-manifest

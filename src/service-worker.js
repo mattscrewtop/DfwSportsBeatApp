@@ -1,11 +1,11 @@
 // Load the sw-tookbox library.
-//importScripts('./sw-toolbox.js');
-//importScripts('./runtime-caching.js');
+importScripts('./sw-toolbox.js');
+importScripts('./runtime-caching.js');
 
 
 
 // tick this to make the cache invalidate and update
-const CACHE_VERSION = 2515;
+const CACHE_VERSION = 2517;
 const CURRENT_CACHES =
 	{
 		'app-shell': 'app-shell-cache-v' + CACHE_VERSION,
