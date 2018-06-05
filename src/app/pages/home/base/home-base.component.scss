@@ -6,10 +6,8 @@ cdf-video-background
 }
 
 twitterwidget {
-	display: contents;
-}
-.twitter-tweet {
-	display: contents;
+	display: contents !important;
+	transform: unset !important;
 }
 
 .page-container
