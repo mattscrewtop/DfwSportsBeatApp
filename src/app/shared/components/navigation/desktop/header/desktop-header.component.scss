@@ -230,8 +230,8 @@
 		background-color: $color-background;
 		margin-top: 64px;
 		min-height: 70vh;
-		div.tweet-InformationCircle-widgetParent {
-	    	position: initial;
-		}
-	}	
+	}
+	.tweet-InformationCircle-widgetParent {
+    	position: static;
+	}
 }
