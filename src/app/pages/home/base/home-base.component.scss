@@ -5,8 +5,11 @@ cdf-video-background
 	height: 15rem !important;
 }
 
-.tweet-InformationCircle-widgetParent {
-	position: static !important;
+twitterwidget {
+	display: contents;
+}
+.twitter-tweet {
+	display: contents;
 }
 
 .page-container

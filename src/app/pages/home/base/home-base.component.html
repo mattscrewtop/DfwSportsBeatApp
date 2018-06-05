@@ -24,11 +24,6 @@
 
 	<!--CONTENT LIST-->
 	<section class="page-container__content">
-		<style>
-			.tweet-InformationCircle-widgetParent {
-		    	position: static !important;
-			}
-		</style>
 		<section class="masonry-layout" *ngIf="PageData.ContentList.length > 0">
 			<section class="masonry-layout__panel" [ngClass]="{hasVideo: item.HasVideo}" *ngFor="let item of PageData.ContentList">
 				<section class="masonry-layout__panel__content">

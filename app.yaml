@@ -3,7 +3,7 @@ runtime: python27
 threadsafe: yes
 # [END runtime]
 
-default_expiration: "7d"
+default_expiration: "0d 0h 0m"
 
 handlers:
 #- url: /assets
@@ -19,35 +19,35 @@ handlers:
   mime_type: application/manifest+json
   static_files: dist/\1
   upload: dist/(.*manifest\.json)
-  expiration: "0m"
+  expiration: "0d 0h 0m"
   secure: always
 
 - url: /service-worker\.js
   mime_type: application/javascript
   static_files: dist/service-worker.js
   upload: dist/service-worker\.js
-  expiration: "0m"
+  expiration: "0d 0h 0m"
   secure: always
 
 - url: /sw-toolbox\.js
   mime_type: application/javascript
   static_files: dist/sw-toolbox.js
   upload: dist/sw-toolbox\.js
-  expiration: "0m"
+  expiration: "0d 0h 0m"
   secure: always
 
 - url: /runtime-caching\.js
   mime_type: application/javascript
   static_files: dist/runtime-caching.js
   upload: dist/runtime-caching\.js
-  expiration: "0m"
+  expiration: "0d 0h 0m"
   secure: always
 
 #- url: /manifest\.appcache)
 #  mime_type: text/cache-manifest
 #  static_files: manifest.appcache
 #  upload: manifest\.appcache
-#  expiration: "0m"
+#  expiration: "0d 0h 0m"
 #  secure: always
 
 - url: /(.*\.json)
