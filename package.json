@@ -31,7 +31,7 @@
     "@cdf/cdf-ng": "^2.0.38",
     "@cdf/cdf-ng-contact-us-form": "^1.0.1",
     "@cdf/cdf-ng-tweet": "^1.0.0",
-    "@screwtopmedia/cdf-ng-media": "^1.4.7",
+    "@screwtopmedia/cdf-ng-media": "^1.4.8",
     "@types/lodash": "^4.14.44",
     "angular2-jwt": "^0.1.28",
     "angular2-prettyjson": "^2.0.3",
