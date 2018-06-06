@@ -1,6 +1,6 @@
 {
   "name": "dfw-sports-beat-app",
-  "version": "2.5.24",
+  "version": "2.5.25",
   "license": "MIT",
   "angular-cli": {},
   "scripts": {
@@ -69,7 +69,7 @@
     "tslint": "^4.0.2",
     "typescript": "^2.1.6",
     "webdriver-manager": "12.0.2",
-    "sw-precache": "^4.2.3",
-    "sw-toolbox": "^3.4.0"
+    "sw-precache": "^5.2.1",
+    "sw-toolbox": "^3.6.0"
   }
 }
