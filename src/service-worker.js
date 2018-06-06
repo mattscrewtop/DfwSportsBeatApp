@@ -5,7 +5,7 @@ importScripts('./runtime-caching.js');
 
 
 // tick this to make the cache invalidate and update
-const CACHE_VERSION = 2525;
+const CACHE_VERSION = 2526;
 const CURRENT_CACHES =
 	{
 		'app-shell': 'app-shell-cache-v' + CACHE_VERSION,
@@ -17,6 +17,15 @@ var filesToCache =
 [
 	'/',
 	'/inline.bundle.js',
+	'/jwplayer.controls.js',
+	'/provider.html5.js',
+	'/provider.youtube.js',
+	'/jw-icons.ttf',
+	'/jw-icons.woff',
+	'/polyfills.base64.js',
+	'/polyfills.promise.js',
+	'/polyfills.vttrenderer.js',
+	'/vttparser.js',
 	'/main.bundle.js',
 	'/styles.bundle.js',
 	'/vendor.bundle.js',

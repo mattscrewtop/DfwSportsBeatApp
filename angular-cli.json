@@ -1,7 +1,7 @@
 {
 	"project": 
 	{
-		"version": "2.5.25",
+		"version": "2.5.26",
 		"name": "dfw-sports-beat-progressive-app"
 	},
 	"apps": 
@@ -19,7 +19,13 @@
   				"sw-toolbox.js",
   				"jwplayer.controls.js",
   				"provider.html5.js",
-  				"provider.youtube.js"
+  				"provider.youtube.js",
+  				"jw-icons.ttf",
+  				"jw-icons.woff",
+  				"polyfills.base64.js",
+  				"polyfills.promise.js",
+  				"polyfills.vttrenderer.js",
+  				"vttparser.js"
 			],
 			"index": "index.html",
 			"main": "main.ts",
