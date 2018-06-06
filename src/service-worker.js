@@ -5,7 +5,7 @@ importScripts('./runtime-caching.js');
 
 
 // tick this to make the cache invalidate and update
-const CACHE_VERSION = 2520;
+const CACHE_VERSION = 2522;
 const CURRENT_CACHES =
 	{
 		'app-shell': 'app-shell-cache-v' + CACHE_VERSION,
@@ -15,15 +15,17 @@ const CURRENT_CACHES =
 //APP SHELL FILES...
 var filesToCache = 
 [
-	'/',
+	'/home',
 	'/inline.bundle.js',
 	'/main.bundle.js',
 	'/styles.bundle.js',
-	'/vendor.bundle.js'
+	'/vendor.bundle.js',
+	'/assets/images/logo_199x60.png',
+	'/fontawesome-webfont.af7ae505a9eed503f8b8.woff2'
 	//'/manifest.json'
 ];
 
-var cacehableRequestsList = ['dfwsportsbeat','googleapis','gstatic','cdf','cloudcms','twitter','twimg','ytimg','youtube'];
+var cacehableRequestsList = ['dfwsportsbeat','gstatic','cdf','cloudcms','twitter','twimg','ytimg','youtube'];
 
 
 //WHILE INSTALLING SERVICE WORKER, CACHE APP SHELL...

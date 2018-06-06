@@ -1,5 +1,6 @@
-toolbox.options.debug = true;
+toolbox.options.debug = false;
 
+/*
 // The route for any requests from the googleapis origin
 toolbox.router.get('/(.*)', toolbox.cacheFirst, 
 {
@@ -7,7 +8,7 @@ toolbox.router.get('/(.*)', toolbox.cacheFirst,
 	{
 		name: 'googleapis',
 		maxEntries: 10,
-		maxAgeSeconds: 86400 // cache for a day
+		maxAgeSeconds: 3600 // cache for an hour
 	},
 
 	origin: /\.googleapis\.com$/,
@@ -31,7 +32,6 @@ toolbox.router.get('/(.*)', toolbox.cacheFirst,
 	// Set a timeout threshold of 2 seconds
 	networkTimeoutSeconds: 3
 });
-
 // The route for any requests from the cdf-cloud origin
 toolbox.router.get('/(.*)', toolbox.cacheFirst, 
 {
@@ -39,7 +39,7 @@ toolbox.router.get('/(.*)', toolbox.cacheFirst,
 	{
 		name: 'cdf-cloud',
 		maxEntries: 10,
-		maxAgeSeconds: 86400 // cache for a day
+		maxAgeSeconds: 600 // cache for a day
 	},
 
 	origin: /\.cdf\.cloud$/,
@@ -47,7 +47,7 @@ toolbox.router.get('/(.*)', toolbox.cacheFirst,
 	// Set a timeout threshold of 2 seconds
 	networkTimeoutSeconds: 3
 });
-
+*/
 // The route for any requests from the cloudcms.com origin
 toolbox.router.get('/(.*)', toolbox.cacheFirst, 
 {
